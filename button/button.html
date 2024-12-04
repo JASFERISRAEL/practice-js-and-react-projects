@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <button class="btn">Click me!</button>
+        </div>
+    </div>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+
+        .outer{
+            display:flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .inner{
+            display: flex;
+            width:300px;
+            justify-content: center;
+            align-items: center;
+           
+            height: 300px;
+        }
+        button{
+            padding: 10px;
+            border: 10px;
+            border-radius: 10px;
+            background-color: lightblue;
+            cursor: pointer;
+        
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+
+       
+
+    </style>
+
+    <script>
+        const btn = document.querySelector(".btn");
+        btn.addEventListener("click", ()=>{
+            alert("button is clicked")
+        })
+    </script>
+</body>
+</html>
